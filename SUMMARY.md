@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [1.2nginx准备工作](nginxzhun-bei-gong-zuo.md)
+* [1.1nginx准备工作](nginxzhun-bei-gong-zuo.md)
 
