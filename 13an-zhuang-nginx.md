@@ -16,13 +16,17 @@ Replace “`OS`” with “`rhel`” or “`centos`”, depending on the distrib
 
 按照上面的说明，进行配置。
 
-开启nginx 
+开启nginx
 
 service nginx start
 
-关闭nginx 
+关闭nginx
 
 service nginx stop
+
+重新加载配置文件
+
+nginx -s reload -c /etc/nginx/nginx.conf
 
 
 
