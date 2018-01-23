@@ -28,3 +28,11 @@ yum -y install gcc gcc-c++ autoconf  pcre pcre-devel make automake
 
 yum -y install wget httpd-tools vim
 
+6.新建目录
+
+cd /opt
+
+mkdir app backup download logs work
+
+
+
