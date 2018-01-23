@@ -16,7 +16,10 @@ Context:server,location
 | :--- | :--- |
 | --with-http_random_index_module | 目录中选择一个随机主页 |
 
-
+random_index_module
+Syntax:random_index on | off;
+Default:random_index off;
+Context:location
 
 
 
