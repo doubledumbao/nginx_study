@@ -34,31 +34,31 @@ nginx version: nginx/1.12.2
 
 Usage: nginx \[-?hvVtTq\] \[-s signal\] \[-c filename\] \[-p prefix\] \[-g directives\]
 
-
-
 Options:
 
-  -?,-h         : this help
+-?,-h         : this help
 
-  -v            : show version and exit
+-v            : show version and exit
 
-  -V            : show version and configure options then exit
+-V            : show version and configure options then exit
 
-  -t            : test configuration and exit
+-t            : test configuration and exit
 
-  -T            : test configuration, dump it and exit
+-T            : test configuration, dump it and exit
 
-  -q            : suppress non-error messages during configuration testing
+-q            : suppress non-error messages during configuration testing
 
-  -s signal     : send signal to a master process: stop, quit, reopen, reload
+-s signal     : send signal to a master process: stop, quit, reopen, reload
 
-  -p prefix     : set prefix path \(default: /etc/nginx/\)
+-p prefix     : set prefix path \(default: /etc/nginx/\)
 
-  -c filename   : set configuration file \(default: /etc/nginx/nginx.conf\)
+-c filename   : set configuration file \(default: /etc/nginx/nginx.conf\)
 
-  -g directives : set global directives out of configuration file
+-g directives : set global directives out of configuration file
 
+检查配置文件是否正确
 
+nginx -t -c /etc/nginx/nginx.conf
 
 
 
