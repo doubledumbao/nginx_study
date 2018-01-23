@@ -14,5 +14,7 @@ GWS-Google
 
 三、为什么选择nginx
 
+原因一、IO多路复用epoll
 
+原因二、轻量级
 
