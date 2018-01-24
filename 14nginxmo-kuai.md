@@ -33,3 +33,23 @@ Default:-
 
 Context:http,server,location
 
+
+
+Syntax: sub\_filter\_last\_modified on \| off;
+
+Default:sub\_filter\_last\_modified off;
+
+Context:http,server,location
+
+
+
+Syntax: sub\_filter\_once on \| off;
+
+Default:sub\_filter\_once on;
+
+Context:http,server,location
+
+
+
+
+
