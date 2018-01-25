@@ -36,5 +36,9 @@ Context:http,server,location,if in location
 Syntax:gzip_comp_level level;
 Default:gzip_comp_level 1;
 Context:http,server,location
+####配置语法-压缩
+Syntax:gzip_http_version 1.0 | 1.1;
+Default:gzip_http_version 1.1;
+Context:http,server,location
 
 
