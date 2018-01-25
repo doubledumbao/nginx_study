@@ -1,7 +1,7 @@
 # Nginx的访问控制
 
-基于IP的访问控制 - http\_access\_module  
-基于用户的信任登录 - http\_auth\_basic\_module
+> 基于IP的访问控制 - http\_access\_module  
+> 基于用户的信任登录 - http\_auth\_basic\_module
 
 ## http\_access\_module
 
