@@ -36,4 +36,28 @@ Synax:auth_basic_user_file file;
 Default:-
 Context:http,sever,location,limit_except
 
+---
+查看本机是否安装htpasswd软件
+rpm -qf /usr/bin/htpasswd
+
+
+```
+[root@doubledumbao conf.d]# rpm -qf /usr/bin/htpasswd
+httpd-tools-2.4.6-45.el7.centos.4.x86_64
+```
+如果没有安装执行
+yum info httpd-tools
+yum install -y httpd-tools
+
+---
+http_auth_basic_module局限性
+一、用户信息依赖文件方式
+二、操作管理机械，低效
+解决方案
+一、Nginx结合LUA实现高效验证
+二、Nginx和LDAP打通，利用nginx-auth-ldap模块
+
+
+
+
 
