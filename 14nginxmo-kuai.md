@@ -49,5 +49,28 @@ Default:sub\_filter\_once on;
 
 Context:http,server,location
 
+| 编译选项 | 作用 |
+| :--- | :--- |
+| limit\_conn\_module | 连接频率限制 |
+| limit\_req\_module | 请求频率限制 |
+
+Syntax：limit\_conn\_zone key zone=name:size;  
+Default:-  
+Context:http
+
+---
+
+Syntax:limit\_conn zone number;  
+Default:-  
+Context:http,server,location
+
+---
+Syntax:limit_req_zone key zone=name:size rate=rete;
+Default:-
+Context:http
+---
+Syntax:limit_req zone=name [burst=number] [nodelay];
+Default:-
+Context:http,server,location
 
 
