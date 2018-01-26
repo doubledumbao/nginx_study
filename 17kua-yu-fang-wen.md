@@ -1,14 +1,15 @@
-#跨域访问
+# 跨域访问
 
-Syntax:add_header name value [always];
-Default:-
+Syntax:add\_header name value \[always\];  
+Default:-  
 Context:http,server,location,if in location
 
-实验步骤：
-搭建两台nginx服务器,ip地址分别是192.168.234.131和192.168.234.132。浏览器访问192.168.234.132机器上的页面，该页面有用ajax调用192.168.234.131的页面。
+实验步骤：  
+搭建两台nginx服务器,ip地址分别是192.168.234.131和192.168.234.132。浏览器访问192.168.234.132机器上的页面，该页面有用ajax调用192.168.234.131的页面。  
 配置如下：
 
 192.168.234.132的页面如下：
+
 ```
 <!DOCTYPE html>
 <html>
@@ -17,7 +18,7 @@ Context:http,server,location,if in location
                 <title>跨域请求测试页面</title>
                 <script src="./js/jquery.min.js"></script>
         </head>
-        
+
         <body>
                 <h1>跨域请求测试</h1>
                 <button id="hello">跨域请求</button>
@@ -35,13 +36,14 @@ Context:http,server,location,if in location
                                         }
                                 });
                         });
-                        
+
                 </script>
         </body>
 </html>
-
 ```
+
 192.168.234.132的配置文件如下：
+
 ```
 server {
     listen       80;
@@ -53,7 +55,7 @@ server {
     #   expires 24h;
     #   root /opt/app/code/html;
     #}
-   
+
     location / {
        #add_header Access-Control-Allow-Origin *;
        #add_header Access-Control-Allow-Methods GET,POST,PUT,OPTIONS;
@@ -69,10 +71,12 @@ server {
         root   /usr/share/nginx/html;
     }
 
-       
+
 }
 ```
+
 192.168.234.131的配置文件如下：
+
 ```
 server {
     listen       9000;
@@ -100,4 +104,7 @@ server {
 }
 ```
 
+浏览器请求页面
+
+![](/assets/browser.png)
 
