@@ -7,4 +7,5 @@
 * [1.4nginx模块](14nginxmo-kuai.md)
 * [1.5nginx访问控制](15nginxfang-wen-kong-zhi.md)
 * [1.6常见的nginx中间架构](16changjian-de-nginx-zhong-jian-jia-gou.md)
+* [1.7跨域访问](17kua-yu-fang-wen.md)
 
