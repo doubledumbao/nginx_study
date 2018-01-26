@@ -43,5 +43,32 @@ Context:http,server,location,if in location
 ```
 192.168.234.132的配置文件如下：
 ```
+server {
+    listen       80;
+    server_name  localhost;
+    gzip on;
+    #charset koi8-r;
+    #access_log  /var/log/nginx/host.access.log  main;
+    #location ~ .*\.(html|htm)$ {
+    #   expires 24h;
+    #   root /opt/app/code/html;
+    #}
+   
+    location / {
+       #add_header Access-Control-Allow-Origin *;
+       #add_header Access-Control-Allow-Methods GET,POST,PUT,OPTIONS;
+       root /opt/app/code/html;
+       index jsonweb.html 1.html;
+    }
+    #error_page  404              /404.html;
 
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+       
+}
 ```
