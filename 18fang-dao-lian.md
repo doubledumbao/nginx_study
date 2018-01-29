@@ -1,10 +1,13 @@
-##基于http_refer防盗链配置模块
-Syntax:valid_refer none|blocked|server_names
-Default:-
+## 基于http\_refer防盗链配置模块
+
+Syntax:valid\_refer none\|blocked\|server\_names  
+Default:-  
 Context:server,location
 
 ---
+
 192.168.234.132配置
+
 ```
 server {
     listen       80;
@@ -62,8 +65,9 @@ server {
     #}
 }
 ```
-192.168.234.132的页面
----
+
+## 192.168.234.132的页面
+
 ```
 <!DOCTYPE html>
 <html>
@@ -76,7 +80,9 @@ server {
         </body>
 </html>
 ```
+
 192.168.234.131的页面
+
 ```
 <!DOCTYPE html>
 <html>
@@ -89,4 +95,6 @@ server {
         </body>
 </html>
 ```
+
+
 
